@@ -55,7 +55,30 @@ Cela signifie que le niveau de l'eau dans les deux bacs est le même $H_1=H_2$.
 \[\dot{\delta_x}=f(X_0+\delta_x) \indent \Longrightarrow \indent \dot{\delta_x}=f(X_0)+\frac{\partial f}{\partial x}(X_0).\delta(x)\]
 Sachant que $f(X_0)=0$ ;\indent  $\Longrightarrow \indent \dot{\delta_x}=\frac{\partial f}{\partial x}_{|X_0} . \delta_x$
 \[\dot{\delta_x}=\begin{bmatrix}\frac{-S_n\times \sqrt{2\times g}}{2\times S \times \sqrt{X0}}\end{bmatrix}.\delta_x \ \ ; \indent \longleftarrow \indent \text{Or, ceci est impossible}\]
-Donc, la linéarisation est impossible.	
+Donc, la linéarisation est impossible.
+
+\section{Simulation du modèle non-linéaire:}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{part2.PNG}
+    \caption{Schéma Simulink}
+    \label{fig:part2}
+\end{figure}
+
+On simule pour une condition initiale $X=0.1= H_1-H_2$\\
+Le système autonome converge vers le point d'équilibre $H_1=H_2$ donc vers $X_0=0$
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{autonom.PNG}
+    \caption{Résultats du modèle non-linéare }
+    \label{fig:autonom}
+\end{figure}
+
+	
 	
 \section{\textsc{Fonction de Lyapunov pour le modèle non-linéaire}}
 

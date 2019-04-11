@@ -96,7 +96,47 @@ Le modèle linéarisé s'écrira donc, comme suite:\\
 
 \section{\textsc{Analyse de stabilité asymptotique du système linéarisé}}
 
-	\par La matrice dynamique $A$ du modèle linéarisé est d'ordre $1$, elle possède une valeur propre négative $p=-\frac{S_n}{S}\frac{\sqrt{2\times g}}{2\sqrt{X_0}}$ alors le système linéarisé est asymptotiquement stable.     
+	\par La matrice dynamique $A$ du modèle linéarisé est d'ordre $1$, elle possède une valeur propre négative $p=-\frac{S_n}{S}\frac{\sqrt{2\times g}}{2\sqrt{X_0}}$ alors le système linéarisé est asymptotiquement stable.
+	
+	
+\section{Simulation de la réponse aux condiations initiales des deux modèles:}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{slinear.PNG}
+    \caption{Schéma SimuLink modèles Linéaire }
+    \label{fig:Part1}
+\end{figure}
+
+Pour le modèle linéaire, nous le soummetons à une entrée nulle avec une condition initiale égale à $-X_0$. Nous obtenons en sortie, un signal qui converge vers $0$ <<Figure:\ref{fig:linéar}>> et qui représente le point d'équilibre du modèle linéaire.  
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{linear.PNG}
+    \caption{Résultats du modèle linéarisé }
+    \label{fig:linéar}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{snonlinear.PNG}
+    \caption{Schéma SimuLink du modèle Non-linéaire }
+    \label{fig:snonlinéar}
+\end{figure}
+
+la réponse du modèle non-linéaire pour une condition initiale égale à $0$ est représentée par la figure \ref{fig:nonlinéar}, qui converge convèrge vers le point d'équilibre $X_0$ comme prédit théoriquement.
+
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{nonlinear.PNG}
+    \caption{Résultats du modèle non-linéare }
+    \label{fig:nonlinéar}
+\end{figure}     
 
 
 \section{\textsc{Fonction de Lyapunov pour le modèle linéaire}}
